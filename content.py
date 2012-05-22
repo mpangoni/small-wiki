@@ -12,6 +12,8 @@ from wsgiref.util import FileWrapper
 
 _CONTENT_ROOT = "./contents{0}"
 
+_ROOT = ".{0}"
+
 if not mimetypes.inited:
     mimetypes.init() # try to read system mime.types
 
@@ -36,7 +38,7 @@ def apply_template(name, values):
     return Template(template).substitute(values)
 
 def is_content(context):
-    return os.path.isfile(_CONTENT_ROOT.format(context.path))
+    return os.path.isfile(_CONTENT_ROOT.format(context.path)) or os.path.isfile(_ROOT.format(context.path))
 
 def default_response(content, mimetype='text/html; charset=utf-8'):
     response = [content.encode()]
@@ -44,7 +46,11 @@ def default_response(content, mimetype='text/html; charset=utf-8'):
 
 def send_content(context):
 
-    path = _CONTENT_ROOT.format(context.path)
+
+    path = _CONTENT_ROOT.format(context.path)    
+
+    if not os.path.isfile(path):
+        path = context.path
     
     size = os.path.getsize(path)
     mimetype = guess_mimetype(path)
