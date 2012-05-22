@@ -1,0 +1,101 @@
+a:link, a:visited	{	color: SteelBlue;
+					margin-right: 0; 
+					padding-right: 0px;
+					text-decoration:none; }
+
+a:hover			{	color: OrangeRed;
+					margin-right: 0; 
+					padding-right: 0px;
+					text-decoration:none; }
+
+a:active		{	text-decoration:none; }
+
+body 			{	background-color: #eeeeee;
+					font-family: Tahoma, sans-serif;
+					font-size: 0.8em;
+					line-height: 1.8em;
+					margin: 0px; 
+					padding: 0px}
+
+h1 				{	font-size: 2em;
+					text-indent: 0em;}
+
+h2 				{	font-size: 1.6em;
+					text-indent: 1.5em;}
+
+h3 				{	font-size: 1.2em;
+					text-indent: 3em;}
+
+input[type="submit"] { border: 1px solid black; }
+
+p		 		{	margin: 0px;
+					padding: 0px;
+					line-height: 1.8em;
+					text-indent : 3em; }
+
+textarea 		{	border: 1px solid gray;  }
+
+table 			{	padding: 0px }
+
+
+.timestamp 		{	color: silver;
+					margin: 12px 12px 12px 12px;
+					text-align: right;}
+			
+.content 		{	background-color: #ffffff;
+
+					border: 1px solid #dddddd;
+					border-radius: 7px;
+						
+					margin-left: 20%;
+					margin-top: 16px;
+
+					padding-left: 64px;
+		 			padding-right: 32px;
+		 			padding-top: 0px;
+		 			padding-bottom:32px;
+		 	
+		 			min-height: 600px; 
+		 			width: 804 }
+		 	
+.editor  		{	text-align: center;
+
+					margin-left: 10%; 
+					margin-top: 64px; 
+ 
+					width: 80% }
+
+.footer 		{	margin-left: 20%;
+					margin-top: 4px; 
+					width: 900 }
+					
+.footer_left  	{ 	text-align: left; width: 33%}
+.footer_center 	{ 	text-align: center; width: 33%}
+.footer_right 	{ 	text-align: right; width: 33%}
+
+
+.TODO 			{	font-weight: bolder;
+					color: blue; 
+					padding-left: 64px;
+					background-image: url("/assets/todo_span.png");
+					background-repeat: no-repeat;}
+					
+.DONE 			{	font-weight: bolder;
+					color: silver; 
+					padding-left: 64px;
+					background-image: url("/assets/done_span.png");
+					background-repeat: no-repeat;
+					text-decoration: line-through;}
+
+.QUESTION		{	font-weight: bolder;
+					color: red; 
+					padding-right: 64px;
+					background-image: url("/assets/question_span.png");
+					background-repeat: no-repeat;}
+
+.VERIFY			{	font-weight: bolder;
+					color: red; 
+					padding-right: 64px;
+					background-image: url("/assets/VERIFY_span.png");
+					background-repeat: no-repeat;}
+					

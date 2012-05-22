@@ -1,0 +1,41 @@
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" href="/assets/styles/default.css"  type='text/css' media='screen'>
+    
+</head>
+<body>
+
+<div id="title">
+
+<div>
+
+<form action="/store_content.wsgi" method="POST" accept-charset="utf-8">
+
+    <input type="hidden" name="resource" value="${resource}">
+
+	<div class="editor">
+	<table>
+		<tr>
+			<td>
+			<a href="/markme/Referencia_para_MarkdME.html">Referencia para MarkdMe</a>			
+		  	</td>
+			<td align="right">
+	        <input type="submit" value="Criar / Atualizar"/>
+		    </td>
+		</tr>
+		<tr><td colspan=2>
+	        <textarea name="content" rows="40" cols="120">${content}</textarea>
+		    </td>
+		</tr>
+		</table>
+	</div>
+
+	<div id="footer">
+
+	</div>
+
+</form>
+
+</body>
+</html>

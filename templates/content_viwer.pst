@@ -1,0 +1,61 @@
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<link href="/assets/bootstrap/css/bootstrap.css" rel="stylesheet"/>
+	<style>
+		body { padding-top: 60px; padding-bottom: 40px;}
+	</style>
+
+    <link rel="stylesheet" href="/assets/styles/default.css"  type='text/css' media='screen'>
+	<script src="/assets/scripts/scripts.js" type="text/javascript"></script>
+</head>
+
+<body>
+
+<div class="navbar navbar-fixed-top">
+	<div class="navbar-inner">
+	<div class="container">
+<form id="update" action="/update_content.wsgi" method="POST" accept-charset="utf-8">
+    <input type="hidden" name="resource" value="${resource}">
+
+	<ul class="nav">
+		<li class="active">
+			<a href="javascript: history.go(-1);">Voltar</a>
+		</li>	
+
+		<li>
+			<a href="/index.html">principal</a>
+		</li>
+
+		<li>
+			<a href="/about_me/index.html">sobre</a>
+		</li>	
+		<li>
+			<a href="javascript: document.forms['update'].submit();">editar esta p&aacute;gina</a>
+		</li>	
+	</ul>
+</form>
+	</div>
+	</div>
+</div>
+
+
+<div class="container">
+
+<div class="row">
+	<div class="span12">
+		Atualizado em: ${timestamp}
+	</div>
+
+
+</div>
+
+<div class="row">
+	<div class="span12">
+		${content}
+	</div>
+</div>
+
+</div>
+</body>
+</html>
