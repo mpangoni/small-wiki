@@ -50,7 +50,7 @@ def send_content(context):
     path = _CONTENT_ROOT.format(context.path)    
 
     if not os.path.isfile(path):
-        path = context.path
+        path = _ROOT.format(context.path)
     
     size = os.path.getsize(path)
     mimetype = guess_mimetype(path)
