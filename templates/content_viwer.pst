@@ -15,8 +15,6 @@
 <div class="navbar navbar-fixed-top">
 	<div class="navbar-inner">
 	<div class="container">
-<form id="update" action="/update_content.wsgi" method="POST" accept-charset="utf-8">
-    <input type="hidden" name="resource" value="${resource}">
 
 	<ul class="nav">
 		<li class="active">
@@ -30,11 +28,19 @@
 		<li>
 			<a href="/about_me/index.html">sobre</a>
 		</li>	
-		<li>
-			<a href="javascript: document.forms['update'].submit();">editar esta p&aacute;gina</a>
-		</li>	
+
 	</ul>
-</form>
+	
+	<form id="update" action="/update_content.wsgi" method="POST" accept-charset="utf-8">
+		<input type="hidden" name="resource" value="${resource}">
+
+		<ul class="nav pull-right">
+			<li >
+				<a href="javascript: document.forms['update'].submit();"><i class="icon-edit icon-white"></i> Edit</a>
+			</li>		
+		</ul>
+
+	</form>
 	</div>
 	</div>
 </div>
@@ -56,6 +62,10 @@
 	</div>
 </div>
 
-</div>
+<footer class="footer">
+
+</footer>
+
+</div> <!-- /container -->
 </body>
 </html>
