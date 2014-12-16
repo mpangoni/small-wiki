@@ -39,8 +39,8 @@ def mark_unordered_list(text):
 
 def mark_ordered_list(text):
     
-    li_pattern = re.compile(r'^[0..9]{1,3}\.(.*?)$', flags=re.MULTILINE)    
-    ol_pattern = re.compile(r'((^[0..9]{1,3}\.(.*)\n)+)', flags=re.MULTILINE)
+    li_pattern = re.compile(r'^0\.(.*?)$', flags=re.MULTILINE)    
+    ol_pattern = re.compile(r'((^0\.(.*)\n)+)', flags=re.MULTILINE)
     
     return li_pattern.sub(r'<li>\1</li>',  ol_pattern.sub(r'<ol>\n\1</ol>\n', text))
 
@@ -97,7 +97,8 @@ Some Text 2'''))
 
         def test_mark_lists(self):
             print(mark_unordered_list('teste\n\n-hello\n-world\nteste\n-hello\n-world\n'))
-                        
+            print(mark_ordered_list('teste\n\n0. hello\n0. world\nteste\n0. hello\n0. world\n'))
+
         def test_mark_me(self):
             sample ='''
 ### This is a word of conflicts ###

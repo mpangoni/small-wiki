@@ -22,13 +22,16 @@ def parse_environ(environ):
     context = cgi.FieldStorage(fp=environ['wsgi.input'], environ=post_env, keep_blank_values=True)
     context.path = environ.get('PATH_INFO','') 
 
+    if re.match(r'.*\/$', context.path):
+        context.path = context.path + "index.html"
+
     return context
 
 
 def small_wiki_app(environ, start_response):
 
     context = parse_environ(environ)
-    print(context.path)
+    
     matched_call = re.match(r'.*\/(.+)\.wsgi', context.path )
     
     #requested resource is a functionality    

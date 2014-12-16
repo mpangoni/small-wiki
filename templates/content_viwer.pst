@@ -30,30 +30,27 @@
 		</li>	
 
 	</ul>
-	
-	<form id="update" action="/update_content.wsgi" method="POST" accept-charset="utf-8">
-		<input type="hidden" name="resource" value="${resource}">
 
-		<ul class="nav pull-right">
-			<li >
-				<a href="javascript: document.forms['update'].submit();"><i class="icon-edit icon-white"></i> Edit</a>
-			</li>		
-		</ul>
 
-	</form>
-	</div>
+
+            <form id="update" action="/update_content.wsgi" method="POST" accept-charset="utf-8">
+                    <input type="hidden" name="resource" value="${resource}">
+
+                    <ul class="nav pull-right">	
+                            <li >
+                                    <a href="javascript: document.forms['update'].submit();"><i class="icon-edit icon-white"></i> Edit</a>
+                            </li>
+                    </ul>
+            </form>
+
+        </div>
 	</div>
 </div>
-
 
 <div class="container">
 
 <div class="row">
-	<div class="span12">
-		Atualizado em: ${timestamp}
-	</div>
-
-
+    <div class="offset9 span3"><i class="icon-time"></i> ${timestamp} </div>
 </div>
 
 <div class="row">
