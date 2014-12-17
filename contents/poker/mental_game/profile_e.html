@@ -1,0 +1,89 @@
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<link href="/assets/bootstrap/css/bootstrap.css" rel="stylesheet"/>
+	<style>
+		body { padding-top: 60px; padding-bottom: 40px;}
+	</style>
+
+    <link rel="stylesheet" href="/assets/styles/default.css"  type='text/css' media='screen'>
+	<script src="/assets/scripts/scripts.js" type="text/javascript"></script>
+</head>
+
+<body>
+
+<div class="navbar navbar-fixed-top">
+	<div class="navbar-inner">
+	<div class="container">
+
+	<ul class="nav">
+		<li class="active">
+			<a href="javascript: history.go(-1);">Voltar</a>
+		</li>	
+
+		<li>
+			<a href="/index.html">principal</a>
+		</li>
+
+		<li>
+			<a href="/about_me/index.html">sobre</a>
+		</li>	
+
+	</ul>
+
+
+
+            <form id="update" action="/update_content.wsgi" method="POST" accept-charset="utf-8">
+                    <input type="hidden" name="resource" value="/poker/mental_game/profile_e.html">
+
+                    <ul class="nav pull-right">	
+                            <li >
+                                    <a href="javascript: document.forms['update'].submit();"><i class="icon-edit icon-white"></i> Edit</a>
+                            </li>
+                    </ul>
+            </form>
+
+        </div>
+	</div>
+</div>
+
+<div class="container">
+
+<div class="row">
+    <div class="offset9 span3"><i class="icon-time"></i> 2014-12-17 16:31:22.151358 </div>
+</div>
+
+<div class="row">
+	<div class="span12">
+		<p>Focus Profile </p>
+<p></p>
+<p>* What are the factors that lead to your ideal level of focus? </p>
+<p></p>
+<p>* How long does that ideal level of focus last and what’s the first sign that you’ve lost it?  </p>
+<p></p>
+<p>* What causes you to lose focus?  </p>
+<p></p>
+<p>* How frequently do you lose focus during a session? </p>
+<p></p>
+<p>* How long does it take for you to notice that you’ve lost focus, and once you do, how long does it then take for you to get refocused? </p>
+<p></p>
+<p>* When is your focus typically at its worst?  </p>
+<p></p>
+<p>* When distracted by thoughts, what are you typically thinking about? </p>
+<p></p>
+<p>* Do you tend to have poorer focus at the beginning, middle, or end of a session? </p>
+<p></p>
+<p>* How well do you handle being card dead? </p>
+<p></p>
+<p>* How do sleep, diet, and exercise affect the quality of your focus? </p>
+
+	</div>
+</div>
+
+<footer class="footer">
+
+</footer>
+
+</div> <!-- /container -->
+</body>
+</html>

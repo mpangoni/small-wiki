@@ -1,0 +1,10 @@
+# Profiles #
+
+- [Zone Profile](profile_a.html)
+- [A to C game Analisys](profile_b.html)
+- [Learning Profile](profile_c.html)
+- [Decision Making Process](profile_d.html)
+- [Focus Profile](profile_e.html)
+- [Goal Setting](profile_f.html)
+- [Self-Discipline Profile](profile_g.html)
+

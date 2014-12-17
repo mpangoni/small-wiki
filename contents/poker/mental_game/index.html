@@ -1,0 +1,81 @@
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<link href="/assets/bootstrap/css/bootstrap.css" rel="stylesheet"/>
+	<style>
+		body { padding-top: 60px; padding-bottom: 40px;}
+	</style>
+
+    <link rel="stylesheet" href="/assets/styles/default.css"  type='text/css' media='screen'>
+	<script src="/assets/scripts/scripts.js" type="text/javascript"></script>
+</head>
+
+<body>
+
+<div class="navbar navbar-fixed-top">
+	<div class="navbar-inner">
+	<div class="container">
+
+	<ul class="nav">
+		<li class="active">
+			<a href="javascript: history.go(-1);">Voltar</a>
+		</li>	
+
+		<li>
+			<a href="/index.html">principal</a>
+		</li>
+
+		<li>
+			<a href="/about_me/index.html">sobre</a>
+		</li>	
+
+	</ul>
+
+
+
+            <form id="update" action="/update_content.wsgi" method="POST" accept-charset="utf-8">
+                    <input type="hidden" name="resource" value="/poker/mental_game/index.html">
+
+                    <ul class="nav pull-right">	
+                            <li >
+                                    <a href="javascript: document.forms['update'].submit();"><i class="icon-edit icon-white"></i> Edit</a>
+                            </li>
+                    </ul>
+            </form>
+
+        </div>
+	</div>
+</div>
+
+<div class="container">
+
+<div class="row">
+    <div class="offset9 span3"><i class="icon-time"></i> 2014-12-17 16:19:22.095424 </div>
+</div>
+
+<div class="row">
+	<div class="span12">
+		<h1> Profiles </h1>
+<p></p>
+<p></p>
+<ul>
+<li> <a href="profile_a.html">Zone Profile</a></li>
+<li> <a href="profile_b.html">A to C game Analisys</a></li>
+<li> <a href="profile_c.html">Learning Profile</a></li>
+<li> <a href="profile_d.html">Decision Making Process</a></li>
+<li> <a href="profile_e.html">Focus Profile</a></li>
+<li> <a href="profile_f.html">Goal Setting</a></li>
+<li> <a href="profile_g.html">Self-Discipline Profile</a></li>
+</ul>
+<p></p>
+
+	</div>
+</div>
+
+<footer class="footer">
+
+</footer>
+
+</div> <!-- /container -->
+</body>
+</html>

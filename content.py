@@ -33,7 +33,7 @@ def guess_mimetype(path):
 def apply_template(name, values):
     
     template = open( TEMPLATE_LOCATION.format(name) ).read()
-    return Template(template).substitute(values)
+    return Template(template).safe_substitute(values)
 
 def is_content(context):
     return os.path.isfile(CONTENT_LOCATION.format(context.path)) or os.path.isfile(ROOT_LOCATION.format(context.path))
